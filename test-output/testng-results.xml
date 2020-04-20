@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="73916" started-at="2020-04-20T11:51:39Z" finished-at="2020-04-20T11:52:53Z">
+    <groups>
+      <group name="search">
+        <method signature="allurereports.clickSearchTets()[pri:3, instance:com.report.allurereports@7df587ef]" name="clickSearchTets" class="com.report.allurereports"/>
+      </group> <!-- search -->
+      <group name="title">
+        <method signature="allurereports.jaleshTitleTest()[pri:1, instance:com.report.allurereports@7df587ef]" name="jaleshTitleTest" class="com.report.allurereports"/>
+      </group> <!-- title -->
+      <group name="Logo">
+        <method signature="allurereports.jaleshLogoTest()[pri:2, instance:com.report.allurereports@7df587ef]" name="jaleshLogoTest" class="com.report.allurereports"/>
+      </group> <!-- Logo -->
+    </groups>
+    <test name="Default test" duration-ms="73916" started-at="2020-04-20T11:51:39Z" finished-at="2020-04-20T11:52:53Z">
+      <class name="com.report.allurereports">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.report.allurereports@7df587ef]" name="setup" is-config="true" duration-ms="52484" started-at="2020-04-20T11:51:39Z" finished-at="2020-04-20T11:52:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="jaleshTitleTest()[pri:1, instance:com.report.allurereports@7df587ef]" name="jaleshTitleTest" duration-ms="270" started-at="2020-04-20T11:52:31Z" description="check the Title " finished-at="2020-04-20T11:52:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jaleshTitleTest -->
+        <test-method status="PASS" signature="jaleshLogoTest()[pri:2, instance:com.report.allurereports@7df587ef]" name="jaleshLogoTest" duration-ms="179" started-at="2020-04-20T11:52:32Z" description="To verify the Logo" finished-at="2020-04-20T11:52:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jaleshLogoTest -->
+        <test-method status="PASS" signature="clickSearchTets()[pri:3, instance:com.report.allurereports@7df587ef]" name="clickSearchTets" duration-ms="17380" started-at="2020-04-20T11:52:32Z" description="Click on the Search Button" finished-at="2020-04-20T11:52:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickSearchTets -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.report.allurereports@7df587ef]" name="TearDown" is-config="true" duration-ms="2981" started-at="2020-04-20T11:52:50Z" finished-at="2020-04-20T11:52:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.report.allurereports -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

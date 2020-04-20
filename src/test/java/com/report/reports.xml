@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Allure_Reports">
+
+  	 <test name="To generate allure reports">
+     
+  		<classes>
+  	   	   		<class name="com.report.allurereports"/>
+  		</classes>
+	</test>
+  
+</suite> 
+
+
+
