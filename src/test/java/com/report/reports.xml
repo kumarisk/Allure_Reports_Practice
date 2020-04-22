@@ -1,11 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="Allure_Reports">
+
+	<listeners>
+		<listener class-name="com.AllureLisnere.ExtendReportlistener" />
+		<listener class-name="com.AllureLisnere.TestAllureListener" />
+	</listeners>
 
   	 <test name="To generate allure reports">
      
   		<classes>
   	   	   		<class name="com.report.allurereports"/>
+  	   	   		
   		</classes>
 	</test>
   

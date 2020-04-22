@@ -1,38 +1,149 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="2" ignored="0" total="4" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="73916" started-at="2020-04-20T11:51:39Z" finished-at="2020-04-20T11:52:53Z">
+  <suite name="Default suite" duration-ms="89825" started-at="2020-04-21T12:15:28Z" finished-at="2020-04-21T12:16:58Z">
     <groups>
       <group name="search">
-        <method signature="allurereports.clickSearchTets()[pri:3, instance:com.report.allurereports@7df587ef]" name="clickSearchTets" class="com.report.allurereports"/>
+        <method signature="allurereports.clickSearchTest()[pri:3, instance:com.report.allurereports@2555fff0]" name="clickSearchTest" class="com.report.allurereports"/>
       </group> <!-- search -->
+      <group name="book">
+        <method signature="allurereports.clickBookTest()[pri:4, instance:com.report.allurereports@2555fff0]" name="clickBookTest" class="com.report.allurereports"/>
+      </group> <!-- book -->
       <group name="title">
-        <method signature="allurereports.jaleshTitleTest()[pri:1, instance:com.report.allurereports@7df587ef]" name="jaleshTitleTest" class="com.report.allurereports"/>
+        <method signature="allurereports.jaleshTitleTest()[pri:1, instance:com.report.allurereports@2555fff0]" name="jaleshTitleTest" class="com.report.allurereports"/>
       </group> <!-- title -->
       <group name="Logo">
-        <method signature="allurereports.jaleshLogoTest()[pri:2, instance:com.report.allurereports@7df587ef]" name="jaleshLogoTest" class="com.report.allurereports"/>
+        <method signature="allurereports.jaleshLogoTest()[pri:2, instance:com.report.allurereports@2555fff0]" name="jaleshLogoTest" class="com.report.allurereports"/>
       </group> <!-- Logo -->
     </groups>
-    <test name="Default test" duration-ms="73916" started-at="2020-04-20T11:51:39Z" finished-at="2020-04-20T11:52:53Z">
+    <test name="Default test" duration-ms="89825" started-at="2020-04-21T12:15:28Z" finished-at="2020-04-21T12:16:58Z">
       <class name="com.report.allurereports">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.report.allurereports@7df587ef]" name="setup" is-config="true" duration-ms="52484" started-at="2020-04-20T11:51:39Z" finished-at="2020-04-20T11:52:31Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.report.allurereports@2555fff0]" name="setup" is-config="true" duration-ms="67478" started-at="2020-04-21T12:15:28Z" finished-at="2020-04-21T12:16:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="jaleshTitleTest()[pri:1, instance:com.report.allurereports@7df587ef]" name="jaleshTitleTest" duration-ms="270" started-at="2020-04-20T11:52:31Z" description="check the Title " finished-at="2020-04-20T11:52:32Z">
+        <test-method status="PASS" signature="jaleshTitleTest()[pri:1, instance:com.report.allurereports@2555fff0]" name="jaleshTitleTest" duration-ms="453" started-at="2020-04-21T12:16:36Z" description="check the Title " finished-at="2020-04-21T12:16:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- jaleshTitleTest -->
-        <test-method status="PASS" signature="jaleshLogoTest()[pri:2, instance:com.report.allurereports@7df587ef]" name="jaleshLogoTest" duration-ms="179" started-at="2020-04-20T11:52:32Z" description="To verify the Logo" finished-at="2020-04-20T11:52:32Z">
+        <test-method status="FAIL" signature="jaleshLogoTest()[pri:2, instance:com.report.allurereports@2555fff0]" name="jaleshLogoTest" duration-ms="308" started-at="2020-04-21T12:16:36Z" description="To verify the Logo" finished-at="2020-04-21T12:16:37Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:568)
+at org.testng.Assert.assertEquals(Assert.java:578)
+at com.report.allurereports.jaleshLogoTest(allurereports.java:65)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- jaleshLogoTest -->
-        <test-method status="PASS" signature="clickSearchTets()[pri:3, instance:com.report.allurereports@7df587ef]" name="clickSearchTets" duration-ms="17380" started-at="2020-04-20T11:52:32Z" description="Click on the Search Button" finished-at="2020-04-20T11:52:50Z">
+        <test-method status="PASS" signature="clickSearchTest()[pri:3, instance:com.report.allurereports@2555fff0]" name="clickSearchTest" duration-ms="16434" started-at="2020-04-21T12:16:37Z" description="Click on the Search Button" finished-at="2020-04-21T12:16:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickSearchTets -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.report.allurereports@7df587ef]" name="TearDown" is-config="true" duration-ms="2981" started-at="2020-04-20T11:52:50Z" finished-at="2020-04-20T11:52:53Z">
+        </test-method> <!-- clickSearchTest -->
+        <test-method status="FAIL" signature="clickBookTest()[pri:4, instance:com.report.allurereports@2555fff0]" name="clickBookTest" duration-ms="167" started-at="2020-04-21T12:16:53Z" description="Click on the Book Button" finished-at="2020-04-21T12:16:53Z">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
+            <message>
+              <![CDATA[Given xpath expression "//div[@onclick="bookNow('312')"]." is invalid: SyntaxError: The expression is not a legal expression.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ZL-HYD-LT0072', ip: '192.168.43.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 75.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200403170909, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 23760, moz:profile: C:\Users\sudheer.indlamudi\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2dea88f0-842e-4ec3-a9c9-d4e16607f9f2
+*** Element info: {Using=xpath, value=//div[@onclick="bookNow('312')"].}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: Given xpath expression "//div[@onclick="bookNow('312')"]." is invalid: SyntaxError: The expression is not a legal expression.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ZL-HYD-LT0072', ip: '192.168.43.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 75.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200403170909, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 23760, moz:profile: C:\Users\sudheer.indlamudi\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2dea88f0-842e-4ec3-a9c9-d4e16607f9f2
+*** Element info: {Using=xpath, value=//div[@onclick="bookNow('312')"].}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.report.allurereports.clickBookTest(allurereports.java:89)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickBookTest -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.report.allurereports@2555fff0]" name="TearDown" is-config="true" duration-ms="4360" started-at="2020-04-21T12:16:53Z" finished-at="2020-04-21T12:16:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->

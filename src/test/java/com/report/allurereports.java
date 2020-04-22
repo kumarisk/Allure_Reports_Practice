@@ -8,7 +8,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+
+import com.AllureLisnere.TestAllureListener;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
@@ -18,9 +21,10 @@ import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Step;
 import io.qameta.allure.Story;
 
+@Listeners({TestAllureListener.class})
 public class allurereports {
 	
-	WebDriver driver;
+	public WebDriver driver;
 	
 	@BeforeTest
 	public void setup() throws InterruptedException {
@@ -58,7 +62,7 @@ public class allurereports {
 	@Step("Verify Logo")
 	public void jaleshLogoTest() {
 		boolean logo = driver.findElement(By.xpath("//a[@class=\"brand_logo\"]")).isDisplayed();
-		Assert.assertEquals(logo, true);
+		Assert.assertEquals(logo, false);
 		
 	}
 	
@@ -69,8 +73,20 @@ public class allurereports {
 	@Description("Test Case Description: To Verify Search button")
 	@Story("Story Name: To check user is able to click on the search button")
 	@Step("Clicking on the Search button")
-	public void clickSearchTest() {
+	public void clickSearchTest() throws InterruptedException {
 		driver.findElement(By.xpath("//button[@class=\"custom-btn dark filter-search-btn\"]")).click();
+		Thread.sleep(5000);
+	}
+	
+	@Test(priority=4,groups="book",description="Click on the Book Button")
+	@Severity(SeverityLevel.MINOR)
+	@Epic("Ep004")
+	@Feature("Search Button")
+	@Description("Test Case Description: To Verify Book button")
+	@Story("Story Name: To check user is able to click on the Book button")
+	@Step("Clicking on the Book button")
+	public void clickBookTest() {
+		driver.findElement(By.xpath("//div[@onclick=\"bookNow('312')\"].")).click();
 	}
 	
 	@AfterTest
@@ -78,4 +94,6 @@ public class allurereports {
 		driver.quit();
 	}
 
+	
+	
 }
