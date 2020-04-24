@@ -86,7 +86,7 @@ public class allurereports {
 	@Story("Story Name: To check user is able to click on the Book button")
 	@Step("Clicking on the Book button")
 	public void clickBookTest() {
-		driver.findElement(By.xpath("//div[@onclick=\"bookNow('312')\"]")).click();
+		driver.findElement(By.xpath("//div[@onclick=\"bookNow('316')\"]")).click();
 	}
 	
 	@AfterTest
