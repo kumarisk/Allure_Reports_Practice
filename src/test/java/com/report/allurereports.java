@@ -8,10 +8,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Listeners;
+
 import org.testng.annotations.Test;
 
-import com.AllureLisnere.TestAllureListener;
+
 
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
@@ -21,7 +21,7 @@ import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Step;
 import io.qameta.allure.Story;
 
-@Listeners({TestAllureListener.class})
+
 public class allurereports {
 	
 	public WebDriver driver;
@@ -62,7 +62,7 @@ public class allurereports {
 	@Step("Verify Logo")
 	public void jaleshLogoTest() {
 		boolean logo = driver.findElement(By.xpath("//a[@class=\"brand_logo\"]")).isDisplayed();
-		Assert.assertEquals(logo, false);
+		Assert.assertEquals(logo, true);
 		
 	}
 	
@@ -86,7 +86,7 @@ public class allurereports {
 	@Story("Story Name: To check user is able to click on the Book button")
 	@Step("Clicking on the Book button")
 	public void clickBookTest() {
-		driver.findElement(By.xpath("//div[@onclick=\"bookNow('312')\"].")).click();
+		driver.findElement(By.xpath("//div[@onclick=\"bookNow('312')\"]")).click();
 	}
 	
 	@AfterTest
