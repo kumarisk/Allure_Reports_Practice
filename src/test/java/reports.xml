@@ -5,7 +5,7 @@
 
 	<listeners>
 		<listener class-name="com.AllureLisnere.ExtendReportlistener" />
-		<listener class-name="com.AllureLisnere.TestAllureListener" />
+		
 	</listeners>
 
   	 <test name="To generate allure reports">

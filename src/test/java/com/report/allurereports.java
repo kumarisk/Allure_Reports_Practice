@@ -4,9 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -33,10 +31,9 @@ public class allurereports {
 		
 	System.setProperty("webdriver.gecko.driver", "E:/geckodriver-v0.26.0-win64/geckodriver.exe");
 	
-	FirefoxOptions options = new FirefoxOptions();
-	options.addArguments("--headless");
+
 	
-    driver = new FirefoxDriver(options);
+    driver = new FirefoxDriver();
     driver.get("https://qa.jaleshcruises.com/");
     driver.manage().window().maximize();
     driver.manage().timeouts().implicitlyWait(75, TimeUnit.SECONDS);

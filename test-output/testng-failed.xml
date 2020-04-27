@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Allure_Reports]">
+  <listeners>
+    <listener class-name="com.AllureLisnere.ExtendReportlistener"/>
+  </listeners>
+  <test thread-count="5" name="To generate allure reports(failed)">
     <classes>
       <class name="com.report.allurereports">
         <methods>
           <include name="clickBookTest"/>
-          <include name="jaleshLogoTest"/>
           <include name="setup"/>
           <include name="TearDown"/>
         </methods>
       </class> <!-- com.report.allurereports -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- To generate allure reports(failed) -->
+</suite> <!-- Failed suite [Allure_Reports] -->
